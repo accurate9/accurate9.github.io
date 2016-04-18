@@ -1,24 +1,86 @@
-﻿<div class="row zoneSplit"></div>
-<div class="row" ng-controller="jobsCtrl">
-    <div class="col-md-offset-1 col-md-2 sideMenuAndSlideImg zone">
-        <h3><i class="fa fa-list-ul fa-margin" style="color: #d7000f;padding-left:10px;"></i>招贤纳士</h3>
-        <!--<div class="sideMenu">
-            <div ng-repeat="menu in sideMenu" class="qaCategory sideMenuItem" ng-click="changeCategory($index)" style="cursor:pointer;">
-                <a href="#/jobsList/{{$index+1}}">{{menu.name}}</a><i class="fa fa-angle-right pull-right" style="padding-right:35px;"></i>
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <base href="http://localhost:18149/" />
+    <title>产品中心</title>
+    <script src="../../lib/js/jquery-1.8.3.min.js"></script>
+    <script src="../../lib/js/common.js"></script>
+    <link href="../../lib/css/common.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="top"></div>
+    <div class="space_hx">&nbsp;</div>
+    <div class="scd clearfix">
+        <div class="scd_l">
+            <div class="l_name">
+                <span>人才招聘</span>
+                /Recruiment
             </div>
-        </div>-->
-    </div>
-    <div class="col-md-8 sideMenuAndSlideImg zone" style="overflow-y: scroll;">
-        <div style="padding:30px;">
-            <dl>
-                <dt>
-                    {{jobsCategory.title}}
-                    {{sideMenu.title}}
-                </dt>
-                <hr />
-                <dd ng-bind-html="jobsCategory.content">
-                </dd>
-            </dl>
+            <ul class="s_nav">
+                <li class="on">
+                    <a href="">
+                        人才招聘
+                        <em>&nbsp;</em>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="scd_r">
+            <div class="r_top">
+                <span class="r_name">人才招聘</span>
+                <div class="pst">
+                    <a href="" class="home">首页</a>>
+                    <a href="">人才招聘</a>
+                </div>
+            </div>
+            <div class="r_ctn clearfix">
+                <div class="join">
+                    <ul>
+                        <li>
+                            <div class="title">财务助理</div>
+                            <div class="des">
+                                <p><b>岗位职责：</b></p>
+                                <p>1、申请票据，购买发票，准备和报送会计报表，协助办理税务报表的申报；</p>
+                                <p>2、现金及银行收付处理，制作记帐凭证，银行对帐，单据审核，开具与保管发票；</p>
+                                <p>3、协助财会文件的准备、归档和保管；</p>
+                                <p>4、固定资产和低值易耗品的登记和管理；</p>
+                                <p>5、负责与银行、税务等部门的对外联络；</p>
+                                <p>6、协助主管完成其他日常事务性工作；</p>
+                                <p>7、其它事宜；</p>
+                                <br />
+                                <p><b>任职要求：</b></p>
+                                <p>1、毕业一年以上，有贸易会计公司经验，或者做过会计文员</p>
+                                <p>2、持有会计证</p>
+                                <p>3、男女不限</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="title">销售主管</div>
+                            <div class="des">
+                                <p><b>岗位职责：</b></p>
+                                <p>1、申请票据，购买发票，准备和报送会计报表，协助办理税务报表的申报；</p>
+                                <p>2、现金及银行收付处理，制作记帐凭证，银行对帐，单据审核，开具与保管发票；</p>
+                                <p>3、协助财会文件的准备、归档和保管；</p>
+                                <p>4、固定资产和低值易耗品的登记和管理；</p>
+                                <p>5、负责与银行、税务等部门的对外联络；</p>
+                                <p>6、协助主管完成其他日常事务性工作；</p>
+                                <p>7、其它事宜；</p>
+                                <br />
+                                <p><b>任职要求：</b></p>
+                                <p>1、毕业一年以上，有贸易会计公司经验，或者做过会计文员</p>
+                                <p>2、持有会计证</p>
+                                <p>3、男女不限</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+    <div id="footer"></div>
+</body>
+</html>

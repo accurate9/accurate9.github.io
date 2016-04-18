@@ -110,11 +110,11 @@ a:hover{ color:#0290DC;}
 .scd .scd_l .s_nav{ width:100%; padding:10px 0;}
 .scd .scd_l .s_nav li{ width:100%; height:40px; line-height:40px; position:relative; border-bottom:1px dashed #ddd; padding-bottom:}
 .scd .scd_l .s_nav li a{ display:block; width:235px; padding:0 10px; height:40px; line-height:40px; font-size:14px; color:#545454;}
-.scd .scd_l .s_nav li em{ display:block; width:5px; height:9px; background:url(../images/icon7.png) no-repeat; position:absolute; right:10px; top:15px;}
+.scd .scd_l .s_nav li em{ display:block; width:5px; height:9px; background:url(../../webCommon/images/aboutus/icon7.png) no-repeat; position:absolute; right:10px; top:15px;}
 .scd .scd_l .s_nav li.on em{ display:none;}
 .scd .scd_l .s_nav li.on{ background:#0072B8; border:0;}
-.scd .scd_l .s_nav li.on a,.scd .scd_l .s_nav li.on a:hover{ color:#FFF;}
-.scd .scd_l .s_nav li a:hover{ color:#0072B8;}
+.scd .scd_l .s_nav li.on a,.scd .scd_l .s_nav li.on a:hover{ color:#FFF;background:#0072B8; border:0;font-size:14px;}
+.scd .scd_l .s_nav li a:hover{ color:#0072B8;background-color:#eee;font-size:15px;text-indent:1em; transition: all 0.5s ease-in-out;-webkit-transition: all 0.5s ease-in-out;-moz-transition: all 0.5s ease-in-out;-o-transition: all 0.5s ease-in-out;-ms-transition: all 0.5s ease-in-out;}
 .scd .scd_r{ width:795px; float:right;}
 .scd .scd_r .r_top{ width:100%; height:35px; position:relative; line-height:35px; border-bottom:2px solid #ddd;}
 .scd .scd_r .r_top span,.scd .scd_r .r_top a{ display:inline-block; *display:inline; zoom:1;}
@@ -122,7 +122,7 @@ a:hover{ color:#0290DC;}
 .scd .scd_r .r_top .pst{ width:60%; position:absolute; right:0; top:0; height:40px; line-height:40px; text-align:right; font-size:12px; color:#444;}
 .scd .scd_r .r_top .pst a{ height:35px; line-height:35px; margin:0 3px; color:#444;}
 .scd .scd_r .r_top .pst a:hover{ color:#0072B8;}
-.scd .scd_r .r_top .pst .home{ padding-left:25px; background:url(../images/icon8.png) no-repeat left center;}
+.scd .scd_r .r_top .pst .home{ padding-left:25px; background:url(../../webCommon/images/aboutus/icon8.png) no-repeat left center;}
 .scd .scd_r .r_ctn{ width:100%; padding:30px 0; text-align:left; font-size:13px; color:#555; line-height:205%;}
 .scd .scd_ra{ width:100%;}
 .scd .scd_ra span{ font-size:18px;}
@@ -133,12 +133,15 @@ a:hover{ color:#0290DC;}
 .ct .ct_l p{ width:100%; font-size:14px; color:#555555; margin-bottom:10px; line-height:200%;}
 .ct .ct_l p em{ color:#333;}
 .ct .ct_r{ width:470px; float:right; margin-right:15px;}
-.ct .ct_r li{ width:100%; margin-bottom:12px;}
-.ct .ct_r .tit{ display:block; width:60px; height:35px; line-height:35px; text-align:right; font-size:13px; float:left; color:#333333;}
-.ct .ct_r .tit i{ font-style:normal; color:#F00;}
-.ct .ct_r input{ width:390px; height:35px; border:1px solid #ddd; line-height:35px; padding:0 5px; float:left; font-size:13px;}
-.ct .ct_r textarea{ font-size:13px; width:400px; height:80px; border:1px solid #ddd; line-height:150%;}
-.ct .ct_r input[type="submit"]{ width:160px; height:45px; background:#0072B9; border:1px solid #0072B9; text-align:center; line-height:45px; cursor:pointer; color:#FFF; font-size:18px;}
+.ct .ct_r ul.wxqq{ margin-bottom:12px;float:right;}
+.ct .ct_r li{ margin-left:40px;float:left;line-height:26px;margin-right:-100px;opacity:0;}
+.ct .ct_r ul.wxqq img{height:100px;width:100px;}
+.ct .ct_r ul.wxqq a{position:relative;float:left;}
+.ct .ct_r ul.wxqq span{position:absolute;display:none;left:0;top:0}
+.ct .ct_r ul.wxqq span:hover{display:block;}
+.ct .ct_r .ljzx{float:right;margin-right:68px;margin-top:10px;position:relative;top:100px;opacity:0;}
+.ct .ct_r .ljzx a{font-size: 16px;color: #fff;border: 1px solid #0290dc;background: #0290dc;border-radius: 14px;line-height: 30px;padding: 6px 20px;text-decoration: none;}
+.ct .ct_r .ljzx a:hover{background:#fff;color:#0290dc}
 .news{ width:100%;}
 .pages{ width:100%; text-align:center; margin-bottom:25px;}
 .pages a{ display:inline-block; *display:inline; zoom:1; height:22px; line-height:22px; border:2px solid #eee; margin:0 1px; font-size:12px; color:#555; padding:0 5px;}
@@ -162,3 +165,23 @@ a:hover{ color:#0290DC;}
 .case li p{ width:100%; height:35px; line-height:35px; text-align:center; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; font-size:14px;}
 
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, button, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, input, ins, kbd, keygen, label, legend, li, mark, menu, nav, object, ol, p, pre, q, s, samp, section, select, small, span, strike, strong, sub, summary, sup, textarea, tfoot, thead, time, tt, u, ul, var, video {margin: 0;padding: 0;}
+a {text-decoration: none;}
+fieldset, img {border: 0;}
+address, caption, cite, code, dfn, em, th, var {font-style: normal;font-weight: normal;}
+ol, ul {list-style: none;}
+caption, th {text-align: left;}
+q:before, q:after {content: '';}
+abbr, acronym {border: 0;}
+/*通用父子盒子嵌套浮动问题解决，开始*/
+.clear {margin: 0px auto;width: 100%;height: 1px;font-size: 1px;clear: both;background: none;overflow: hidden;}
+.clearfix:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+.clearfix {display: inline-block;}
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/*通用父子盒子嵌套浮动问题解决，结束*/
+/*间隙层开始*/
+.space_hx { /*横向间隙*/clear: both;width: 100%;height: 20px;font-size: 1px;overflow: hidden;}
+.space_zx { /*纵向间隙*/float: left;width: 10px;font-size: 1px;overflow: hidden;}/*间隙层结束*/
+/*地图*/
+.bdmp {background:#000;margin-bottom:-47px}
+.BMapLabel{border:solid 1px #000}
