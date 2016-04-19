@@ -1,25 +1,235 @@
-﻿<div class="row zoneSplit"></div>
-<div class="row" ng-controller="newsListCtrl">
-    <div class="col-md-offset-1 col-md-2 sideMenuAndSlideImg zone">
-        <h3><i class="fa fa-list-ul fa-margin" style="color: #d7000f;padding-left:10px;"></i>新闻中心</h3>
-        <div class="sideMenu">
-            <div ng-repeat="menu in sideMenu" class="qaCategory sideMenuItem" ng-click="changeCategory($index)" style="cursor:pointer;">
-                <a href="#/newsList/{{$index+1}}">{{menu.name}}</a><i class="fa fa-angle-right pull-right" style="padding-right:35px;"></i>
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <base href="http://www.accurate9.com/" />
+    <title>产品中心</title>
+    <script src="../../lib/js/jquery-1.8.3.min.js"></script>
+    <script src="../../lib/js/common.js"></script>
+    <script src="../../lib/js/pages.js"></script>
+    <link href="../../lib/css/common.css" rel="stylesheet" />
+    <link href="../../lib/css/products.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="top"></div>
+    <div class="space_hx">&nbsp;</div>
+    <div class="scd clearfix">
+        <div class="scd_l">
+            <div class="l_name">
+                <span>新闻咨询</span>
+                /News
             </div>
-        </div>
-
-    </div>
-    <div class="col-md-8 sideMenuAndSlideImg zone" style="overflow-y: scroll;">
-
-        <div style="padding:30px;">
-            <h3>{{newsCategory.name}}</h3><hr />
-            <ul style="">
-                <li ng-repeat="new in newsCategory.data">
-                    <a ng-href="{{new.url}}newsDetail/{{newsCategory.id}}/{{new.id}}" class="a-link">{{new.title}}</a>
+            <ul class="s_nav">
+                <li class="on">
+                    <a href="">
+                        公司新闻
+                        <em>&nbsp;</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        行业动态
+                        <em>&nbsp;</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        公司公告
+                        <em>&nbsp;</em>
+                    </a>
                 </li>
             </ul>
-
         </div>
-
+        <div class="scd_r">
+            <div class="r_top">
+                <span class="r_name">公司新闻</span>
+                <div class="pst">
+                    <a href="" class="home">首页</a>>
+                    <a href="">新闻咨询</a>>
+                    <a href="">公司新闻</a>
+                </div>
+            </div>
+            <div class="r_ctn clearfix">
+                <div class="news">
+                    <ul>
+                        <li>
+                            <a href="views/news/newsDetail.html">
+                                <p>精密仪器工程荣获2015-2016年度中国建筑工程装饰奖</p>
+                                <em>[2015-10-30]</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="views/news/newsDetail.html">
+                                <p>精密仪器工程荣获2015-2016年度中国建筑工程装饰奖</p>
+                                <em>[2015-10-30]</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="views/news/newsDetail.html">
+                                <p>精密仪器工程荣获2015-2016年度中国建筑工程装饰奖</p>
+                                <em>[2015-10-30]</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="views/news/newsDetail.html">
+                                <p>精密仪器工程荣获2015-2016年度中国建筑工程装饰奖</p>
+                                <em>[2015-10-30]</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="views/news/newsDetail.html">
+                                <p>精密仪器工程荣获2015-2016年度中国建筑工程装饰奖</p>
+                                <em>[2015-10-30]</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="views/news/newsDetail.html">
+                                <p>精密仪器工程荣获2015-2016年度中国建筑工程装饰奖</p>
+                                <em>[2015-10-30]</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>精密仪器工程荣获2015-2016年度中国建筑工程装饰奖</p>
+                                <em>[2015-10-30]</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>精密仪器工程荣获2015-2016年度中国建筑工程装饰奖</p>
+                                <em>[2015-10-30]</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>精密仪器工程荣获2015-2016年度中国建筑工程装饰奖</p>
+                                <em>[2015-10-30]</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>精密仪器工程荣获2015-2016年度中国建筑工程装饰奖</p>
+                                <em>[2015-10-30]</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>精密仪器工程荣获2015-2016年度中国建筑工程装饰奖</p>
+                                <em>[2015-10-30]</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>精密仪器工程荣获2015-2016年度中国建筑工程装饰奖</p>
+                                <em>[2015-10-30]</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>精密仪器工程荣获2015-2016年度中国建筑工程装饰奖</p>
+                                <em>[2015-10-30]</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>精密仪器工程荣获2015-2016年度中国建筑工程装饰奖</p>
+                                <em>[2015-10-30]</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>精密仪器工程荣获2015-2016年度中国建筑工程装饰奖</p>
+                                <em>[2015-10-30]</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>精密仪器工程荣获2015-2016年度中国建筑工程装饰奖</p>
+                                <em>[2015-10-30]</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>精密仪器工程荣获2015-2016年度中国建筑工程装饰奖</p>
+                                <em>[2015-10-30]</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>精密仪器工程荣获2015-2016年度中国建筑工程装饰奖</p>
+                                <em>[2015-10-30]</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>精密仪器工程荣获2015-2016年度中国建筑工程装饰奖</p>
+                                <em>[2015-10-30]</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>精密仪器工程荣获2015-2016年度中国建筑工程装饰奖</p>
+                                <em>[2015-10-30]</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>精密仪器工程荣获2015-2016年度中国建筑工程装饰奖</p>
+                                <em>[2015-10-30]</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>精密仪器工程荣获2015-2016年度中国建筑工程装饰奖</p>
+                                <em>[2015-10-30]</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>精密仪器工程荣获2015-2016年度中国建筑工程装饰奖</p>
+                                <em>[2015-10-30]</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>精密仪器工程荣获2015-2016年度中国建筑工程装饰奖</p>
+                                <em>[2015-10-30]</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>精密仪器工程荣获2015-2016年度中国建筑工程装饰奖</p>
+                                <em>[2015-10-30]</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>精密仪器工程荣获2015-2016年度中国建筑工程装饰奖</p>
+                                <em>[2015-10-30]</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>精密仪器工程荣获2015-2016年度中国建筑工程装饰奖</p>
+                                <em>[2015-10-30]</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>精密仪器工程荣获2015-2016年度中国建筑工程装饰奖</p>
+                                <em>[2015-10-30]</em>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="space_hx">&nbsp;</div>
+                    <div class="pages">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
+    <div id="footer"></div>
+</body>
+</html>

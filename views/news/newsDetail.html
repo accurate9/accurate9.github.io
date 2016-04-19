@@ -1,26 +1,56 @@
-﻿<div class="row zoneSplit"></div>
-<div class="row" ng-controller="newsDetailCtrl">
-    <div class="col-md-offset-1 col-md-2 sideMenuAndSlideImg zone">
-        <h3><i class="fa fa-list-ul fa-margin" style="color: #d7000f;padding-left:10px;"></i>新闻中心</h3>
-        <div class="sideMenu">
-            <div ng-repeat="menu in sideMenu" class="qaCategory sideMenuItem" ng-click="changeCategory($index)" style="cursor:pointer;">
-                <a href="#/newsList/{{$index+1}}">{{menu.name}}</a><i class="fa fa-angle-right pull-right" style="padding-right:35px;"></i>
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <base href="http://www.accurate9.com/" />
+    <title>公司新闻</title>
+    <script src="../../lib/js/jquery-1.8.3.min.js"></script>
+    <script src="../../lib/js/common.js"></script>
+    <link href="../../lib/css/common.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="top">1</div>
+    <div class="space_hx">&nbsp;</div>
+    <div class="scd clearfix">
+        <div class="scd_r scd_ra">
+            <div class="r_top">
+                <span>公司新闻</span>
+                <div class="pst">
+                    <a href="" class="home">首页</a>>
+                    <a href="">新闻咨询</a>>
+                    <a href="">公司新闻</a>
+                </div>
             </div>
+            <div class="s_ctn clearfix">
+                <div class="ct clearfix">
+                    <div class="css_news">
+                        <h1 class="css_h1">饮用水中抗生素检测仪器</h1>
+                        <p class="css_news_p">
+                            <span>来源：恒信仪器&nbsp;&nbsp;</span>
+                            <span>发布于：2015-01-08&nbsp;&nbsp;</span>
+                            <span>浏览：286</span>
+
+                        </p><div>
+                            <br>
+                            &nbsp; &nbsp; 近期，一则饮用水中含有抗生素的检测报道引起人们的热议。据报道，全国的主要河流海河、长江入海口、黄浦江、珠江、辽河等河流的部分点位中都检出了抗生素，其中，珠江广州段受到抗生素药物的污染非常严重，脱水红霉素、磺胺嘧啶、磺胺二甲基嘧啶等典型抗生素的含量分别为460、209和184纳克每升，远远高出了欧美发达国家河流中100纳克每升以下的含量。由于很多江河是城市的饮用水源地，居民家中的饮用水里也有抗生素被检出。<br>
+                            &nbsp; &nbsp; 我国是抗生素使用大国，也是抗生素生产大国：年产抗生素原料大约21万吨，主要用于医疗与农业领域。水体中的抗生素主要来源于制药企业的工业废水和医院的医疗废水。中国药物产量的70%是抗生素，正常使用的抗生素大概有130多种人体；其次，抗生素在动物和水产养殖业用量中占到70%以上。动物和水产养殖业投入大、风险大，为了防止大面积生病死亡，养殖户往往要投放大量抗生素；此外，人们日常服用的抗生素类药品，进入人体内后，被吸收治病的仅占20%左右，有70%至90%都会被排泄出来，然后通过生活污水进入环境。<br>
+                            &nbsp; &nbsp; 既然饮用水中含有抗生素，那么人们岂不是不用再去药店买药了？专家指出：水中含有低剂量的抗生素对人体的影响并不大，但如果长时间食用含有这些抗生素的一些食品之后，就会产生抗药性。抗生素因其杀菌抗毒的功效，被大量应用于人们日常医疗药物中，甚至造成了滥用抗身素的社会现象。早年前，政府就管制了抗身素的使用，防止“小病使用抗生素，大病无药可医”的局面。<br>
+                            &nbsp; &nbsp; 地表水乃至饮用水中的抗生素超标问题已经为我们敲响了公共卫生安全的警钟,如何避免“喝水=吃药”的噩梦,需要政府、企业乃至每个个体都行动起来,共同寻找出路。<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;武汉恒信世纪科技有限公司专业研发生产实验监测分析设备，拥有超高<a href="http://www.hxsj17.com/yiqi/152.html">液相色谱仪</a>水质监测技术，提供个性化色谱检测方案。使用<a href="http://www.hxsj17.com/yiqi/140.html">固相萃取</a>液相色谱法建立水体及<a href="http://www.hxsj17.com">饮用水中抗生素检测方法</a>，检测速率快、灵敏度高、准确性高。<br>
+                            &nbsp;<br>
+                            本文地址：<a href="http://www.accurate9.com/">www.accurate9.com/</a><br>
+                            公司电话：15927107498<br>
+                            公司地址：湖北省武汉市江夏区九凤街光谷8号工坊1-3-601<br>
+                            &nbsp;<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="dituContent" class="bdmp"></div>
         </div>
-
     </div>
-    <div class="col-md-8 sideMenuAndSlideImg zone" style="overflow-y: scroll;">
-
-        <div style="padding:30px;">
-            <dl>
-                <dt>
-                    {{news.title}}
-                </dt>
-                <hr />
-                <dd ng-bind-html="news.content">
-                </dd>
-            </dl>
-        </div>
-
-    </div>
-</div>
+    <div id="footer"></div>
+</body>
+</html>
