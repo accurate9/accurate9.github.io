@@ -187,7 +187,6 @@ abbr, acronym {border: 0;}
 .BMapLabel{border:solid 1px #000}
 
 /*news list*/
-.css_news li{ padding:2px 0px 2px 0px;height:30px;}
 .css_news h1.css_h1{display:block;clear:both;font-size:16px;font-weight:bold;text-align:center;height:40px;line-height:40px;padding-top:5px;}
 .css_news p.css_news_p{text-align:center; line-height:25px; width:100%;}
 .css_news p.css_news_p span{font-size:14px;}
